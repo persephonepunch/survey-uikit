@@ -251,18 +251,6 @@ collections:
             label: Text
             name: '-7c112e99'
             widget: string
-          - hint: 'Original text: Name, key: 24eeab'
-            label: Text
-            name: 24eeab
-            widget: string
-          - hint: 'Original text: Email Address, key: -2b7010d0'
-            label: Text
-            name: '-2b7010d0'
-            widget: string
-          - hint: 'Original text: What was your Gender at Birth?, key: -6386258'
-            label: Text
-            name: '-6386258'
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
