@@ -1,0 +1,818 @@
+
+.formulate-input {
+	margin-bottom: 1.5em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol
+}
+.formulate-input .formulate-input-label {
+	display: block;
+	line-height: 1.5;
+	font-size: .9em;
+	font-weight: 600;
+	margin-bottom: .1em
+}
+.formulate-input .formulate-input-label--before+.formulate-input-help--before {
+	margin-top: -.25em;
+	margin-bottom: .75em
+}
+.formulate-input .formulate-input-element {
+	max-width: 20em;
+	margin-bottom: .1em
+}
+.formulate-input .formulate-input-help {
+	color: #6d6d6d;
+	font-size: .7em;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: .25em
+}
+.formulate-input .formulate-input-errors {
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+.formulate-input .formulate-file-upload-error, .formulate-input .formulate-input-error {
+	color: #960505;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: .25em
+}
+.formulate-input:last-child {
+	margin-bottom: 0
+}
+.formulate-input[data-classification=text] input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .3em;
+	border: 1px solid #cecece;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-size: .9em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	padding: .75em;
+	display: block;
+	width: 100%;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0
+}
+.formulate-input[data-classification=text] input::-moz-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=text] input:-ms-input-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=text] input::placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=text] input:focus {
+	outline: 0;
+	border: 1px solid #41b883
+}
+.formulate-input[data-classification=text] .formulate-input-element--date input, .formulate-input[data-classification=text] .formulate-input-element--datetime-local input, .formulate-input[data-classification=text] .formulate-input-element--month input, .formulate-input[data-classification=text] .formulate-input-element--week input {
+	min-height: 2.2em
+}
+.formulate-input[data-classification=text] .formulate-input-element--search {
+	position: relative
+}
+.formulate-input[data-classification=text] .formulate-input-element--search:before {
+	content: "";
+	width: 2em;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('data:image/svg+xml;utf8,');
+	background-size: 1em 1em;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	pointer-events: none
+}
+.formulate-input[data-classification=text] .formulate-input-element--search input {
+	padding-left: 2em
+}
+.formulate-input[data-classification=text] input[type=color] {
+	height: 1.1em;
+	box-sizing: content-box;
+	width: auto;
+	min-width: 5em
+}
+.formulate-input[data-classification=text] input[type=color]::-webkit-color-swatch-wrapper {
+	padding: 0 0 0 1.5em;
+	display: flex;
+	align-items: center;
+	background-image: url('data:image/svg+xml;utf8,');
+	background-repeat: no-repeat;
+	background-size: .9em .9em;
+	background-position: left .1em
+}
+.formulate-input[data-classification=text] input[type=color]::-webkit-color-swatch {
+	display: block;
+	height: 1em;
+	border-radius: .2em;
+	border: 0;
+	flex: auto
+}
+.formulate-input[data-classification=text] input[type=color]::-moz-color-swatch {
+	display: block;
+	height: 1em;
+	border-radius: .2em;
+	border: 0;
+	flex: auto
+}
+.formulate-input[data-classification=slider] .formulate-input-element--range {
+	display: flex;
+	align-items: center
+}
+.formulate-input[data-classification=slider] .formulate-input-element-range-value {
+	font-size: .9em;
+	line-height: 1;
+	margin-left: .5em;
+	background-color: #efefef;
+	padding: .25em .3em;
+	border-radius: .25em;
+	color: #6d6d6d;
+	font-variant-numeric: tabular-nums
+}
+.formulate-input[data-classification=slider] input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	font-size: 1em;
+	padding: .5em 0
+}
+.formulate-input[data-classification=slider] input:focus {
+	outline: 0
+}
+.formulate-input[data-classification=slider] input::-webkit-slider-thumb {
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	border: 0;
+	background-color: #41b883;
+	margin-top: calc(-.5em + 2px)
+}
+.formulate-input[data-classification=slider] input::-moz-range-thumb {
+	cursor: pointer;
+	-moz-appearance: none;
+	appearance: none;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	border: 0;
+	background-color: #41b883;
+	margin-top: calc(-.5em + 2px)
+}
+.formulate-input[data-classification=slider] input::-ms-thumb {
+	cursor: pointer;
+	appearance: none;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	border: 0;
+	background-color: #41b883;
+	margin-top: calc(-.5em + 2px)
+}
+.formulate-input[data-classification=slider] input::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 4px;
+	background-color: #efefef;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0
+}
+.formulate-input[data-classification=slider] input::-moz-range-track {
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 4px;
+	background-color: #efefef;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0
+}
+.formulate-input[data-classification=textarea] textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .3em;
+	border: 1px solid #cecece;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-size: .9em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	padding: .75em;
+	display: block;
+	width: 100%;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0
+}
+.formulate-input[data-classification=textarea] textarea::-moz-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=textarea] textarea:-ms-input-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=textarea] textarea::placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=textarea] textarea:focus {
+	outline: 0;
+	border: 1px solid #41b883
+}
+.formulate-input[data-classification=button] button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .3em;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-size: .9em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	padding: .75em;
+	display: block;
+	width: 100%;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0;
+	border: 1px solid #41b883;
+	background-color: #41b883;
+	color: #fff;
+	min-width: 0;
+	width: auto;
+	font-weight: 700;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center
+}
+.formulate-input[data-classification=button] button::-moz-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=button] button:-ms-input-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=button] button::placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=button] button:focus {
+	outline: 0;
+	border: 1px solid #41b883
+}
+.formulate-input[data-classification=button] button[disabled], .formulate-input[data-classification=button] button[disabled]:active {
+	background-color: #cecece;
+	border-color: #cecece
+}
+.formulate-input[data-classification=button] button[data-ghost] {
+	color: #41b883;
+	background-color: transparent;
+	border-color: currentColor
+}
+.formulate-input[data-classification=button] button[data-minor] {
+	font-size: .75em;
+	display: inline-block
+}
+.formulate-input[data-classification=button] button[data-danger] {
+	background-color: #960505;
+	border-color: #960505
+}
+.formulate-input[data-classification=button] button[data-danger][data-ghost] {
+	color: #960505;
+	background-color: transparent
+}
+.formulate-input[data-classification=button] button:active {
+	background-color: #64c89b;
+	border-color: #64c89b
+}
+.formulate-input[data-classification=select] .formulate-input-element {
+	position: relative
+}
+.formulate-input[data-classification=select] .formulate-input-element:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-color: #cecece transparent transparent;
+	border-style: solid;
+	border-width: .3em .3em 0;
+	top: 50%;
+	margin-top: -.1em;
+	right: 1em;
+	position: absolute
+}
+.formulate-input[data-classification=select] .formulate-input-element[data-multiple]:before {
+	display: none
+}
+.formulate-input[data-classification=select] select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .3em;
+	border: 1px solid #cecece;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-size: .9em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	display: block;
+	width: 100%;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0;
+	padding: .75em 2em .75em .75em
+}
+.formulate-input[data-classification=select] select::-moz-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=select] select:-ms-input-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=select] select::placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=select] select:focus {
+	outline: 0;
+	border: 1px solid #41b883
+}
+.formulate-input[data-classification=select] select option {
+	color: #000
+}
+.formulate-input[data-classification=select] select option:disabled {
+	color: #a8a8a8
+}
+.formulate-input[data-classification=select] select[multiple] {
+	padding: 0;
+	overflow-y: auto
+}
+.formulate-input[data-classification=select] select[multiple] option {
+	padding: .75em
+}
+.formulate-input[data-classification=select] select[data-placeholder-selected] {
+	color: #a8a8a8
+}
+.formulate-input[data-classification=box] .formulate-input-wrapper {
+	display: flex;
+	align-items: center
+}
+.formulate-input[data-classification=box] .formulate-input-element {
+	overflow: hidden;
+	display: flex;
+	align-items: center
+}
+.formulate-input[data-classification=box] .formulate-input-element input {
+	position: absolute;
+	left: -999px;
+	opacity: 0;
+	pointer-events: none
+}
+.formulate-input[data-classification=box] .formulate-input-element-decorator {
+	display: block;
+	width: 1em;
+	height: 1em;
+	border-radius: .25em;
+	border: 1px solid #cecece;
+	position: relative
+}
+.formulate-input[data-classification=box] .formulate-input-element-decorator:before {
+	content: "";
+	display: block;
+	background-size: contain;
+	background-position: 100%;
+	width: calc(100% - .125em);
+	height: calc(100% - .125em);
+	box-sizing: border-box;
+	position: absolute;
+	top: .0625em;
+	left: .0625em
+}
+.formulate-input[data-classification=box] .formulate-input-element[data-type=radio] .formulate-input-element-decorator {
+	border-radius: 1em
+}
+.formulate-input[data-classification=box] .formulate-input-element[data-type=radio] .formulate-input-element-decorator:before {
+	border-radius: 1em;
+	width: calc(100% - .5em);
+	height: calc(100% - .5em);
+	top: .25em;
+	left: .25em
+}
+.formulate-input[data-classification=box] .formulate-input-element input[type=checkbox]:checked~.formulate-input-element-decorator {
+	border-color: #41b883
+}
+.formulate-input[data-classification=box] .formulate-input-element input[type=checkbox]:checked~.formulate-input-element-decorator:before {
+	background-color: #41b883;
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,')
+}
+.formulate-input[data-classification=box] .formulate-input-element input[type=radio]:checked~.formulate-input-element-decorator {
+	border-color: #41b883
+}
+.formulate-input[data-classification=box] .formulate-input-element input[type=radio]:checked~.formulate-input-element-decorator:before {
+	background-color: #41b883
+}
+.formulate-input[data-classification=box] .formulate-input-element input:focus~.formulate-input-element-decorator {
+	border-color: #41b883
+}
+.formulate-input[data-classification=box] .formulate-input-label--after {
+	margin-left: .5em
+}
+.formulate-input[data-classification=box] .formulate-input-label--before {
+	margin-right: .5em
+}
+.formulate-input[data-classification=group] .formulate-input-group-item, .formulate-input[data-classification=group]>.formulate-input-wrapper>.formulate-input-label {
+	margin-bottom: .5em
+}
+.formulate-input[data-classification=group] [data-is-repeatable] {
+	padding: 1em;
+	border: 1px solid #efefef;
+	border-radius: .3em
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-grouping {
+	margin: -1em -1em 0
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable {
+	padding: 1em 3em 1em 1em;
+	border-bottom: 1px solid #efefef;
+	position: relative
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove {
+	position: absolute;
+	display: block;
+	top: calc(50% - .15em);
+	width: 1.3em;
+	height: 1.3em;
+	background-color: #cecece;
+	right: .85em;
+	border-radius: 1.3em;
+	cursor: pointer;
+	transition: background-color .2s;
+	overflow: hidden;
+	text-indent: -1000px
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove[data-disabled] {
+	opacity: .2;
+	pointer-events: none
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:after, .formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:before {
+	content: "";
+	position: absolute;
+	top: calc(50% - .1em);
+	left: .325em;
+	display: block;
+	width: .65em;
+	height: .2em;
+	background-color: #fff;
+	transform-origin: center center;
+	transition: transform .25s
+}
+@media (pointer:fine) {
+	.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:hover {
+		background-color: #dc2c2c
+	}
+	.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:hover:after, .formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:hover:before {
+		height: .2em;
+		width: .75em;
+		left: .25em;
+		top: calc(50% - .075em)
+	}
+	.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:hover:after {
+		transform: rotate(45deg)
+	}
+	.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable-remove:hover:before {
+		transform: rotate(-45deg)
+	}
+}
+.formulate-input[data-classification=group] [data-is-repeatable] .formulate-input-group-repeatable:last-child {
+	margin-bottom: 1em
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area {
+	width: 100%;
+	position: relative;
+	padding: 2em 0
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area input {
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area[data-has-files] {
+	padding: 0
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area[data-has-files] input {
+	display: none
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area-mask {
+	border-radius: .4em;
+	position: absolute;
+	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 2px dashed #a8a8a8;
+	z-index: 2
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area-mask:before {
+	content: "";
+	background-color: #a8a8a8;
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	pointer-events: none
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area input:focus~.formulate-input-upload-area-mask, .formulate-input[data-classification=file] .formulate-input-upload-area input:hover~.formulate-input-upload-area-mask, .formulate-input[data-classification=file] .formulate-input-upload-area input[data-is-drag-hover]~.formulate-input-upload-area-mask {
+	border-color: #41b883
+}
+.formulate-input[data-classification=file] .formulate-input-upload-area input:focus~.formulate-input-upload-area-mask:before, .formulate-input[data-classification=file] .formulate-input-upload-area input:hover~.formulate-input-upload-area-mask:before, .formulate-input[data-classification=file] .formulate-input-upload-area input[data-is-drag-hover]~.formulate-input-upload-area-mask:before {
+	background-color: #41b883
+}
+.formulate-input[data-classification=file] .formulate-files {
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-add {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	min-width: 75px;
+	border: 1px solid #41b883;
+	color: #41b883;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
+	font-size: 13px;
+	background-color: transparent;
+	cursor: pointer;
+	margin: .5em 0
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-add input {
+	position: absolute;
+	display: block;
+	cursor: pointer
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-add input::-webkit-file-upload-button {
+	display: none
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress {
+	background-color: #cecece;
+	height: .3em;
+	border-radius: 1.25em;
+	width: 5em;
+	overflow: hidden;
+	position: relative;
+	flex: 0 0 5em;
+	right: .75em;
+	transition: height .25s, width .25s, flex-basis .25s;
+	z-index: 2
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	opacity: 0;
+	transform: scale(.08);
+	background-color: #fff;
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,');
+	-webkit-mask-size: 77%;
+	mask-size: 77%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	z-index: 3
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress[data-just-finished] {
+	width: 1.25em;
+	height: 1.25em;
+	flex: 0 0 1.25em
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress[data-just-finished]:before {
+	transition: transform .25s .2s, opacity .25s .2s;
+	transform: scale(1);
+	opacity: 1
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress[data-is-finished] {
+	transition: height .25s, width .25s, left .25s, top, .25s, border-radius .25s;
+	width: .3em;
+	flex: 0 0 .3em;
+	height: 100%;
+	right: 0;
+	border-radius: 0 .23em .23em 0
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress[data-is-finished]:before {
+	transition: opacity .1s;
+	opacity: 0
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-progress .formulate-file-progress-inner {
+	background-color: #41b883;
+	width: 1%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 2
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-name {
+	padding-left: 1.5em;
+	padding-right: 2em;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: auto
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-name:before {
+	position: absolute;
+	left: .7em;
+	top: 50%;
+	margin-top: -.7em;
+	background-color: #a8a8a8;
+	content: "";
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	width: 1.25em;
+	height: 1.25em;
+	display: inline-block;
+	margin-right: .5em
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-remove {
+	width: 1.25em;
+	height: 1.25em;
+	border-radius: 1em;
+	border: 1px solid #a8a8a8;
+	background-color: #a8a8a8;
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,');
+	-webkit-mask-size: .6em;
+	mask-size: .6em;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	cursor: pointer;
+	position: absolute;
+	right: .75em;
+	z-index: 1;
+	transition: transform .25s
+}
+@media (pointer:fine) {
+	.formulate-input[data-classification=file] .formulate-files .formulate-file-remove:hover {
+		transform: scale(1.5)
+	}
+}
+.formulate-input[data-classification=file] .formulate-files li {
+	display: block
+}
+.formulate-input[data-classification=file] .formulate-files li[data-has-error] .formulate-file-progress {
+	background-color: #dc2c2c
+}
+.formulate-input[data-classification=file] .formulate-files li[data-has-preview] .formulate-file-name:before {
+	display: none
+}
+.formulate-input[data-classification=file] .formulate-files li+li {
+	margin-top: .5em
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .3em;
+	border: 1px solid #cecece;
+	box-sizing: border-box;
+	background-color: transparent;
+	font-size: .9em;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	padding: .75em;
+	display: block;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file::-moz-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file:-ms-input-placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file::placeholder {
+	color: #a8a8a8;
+	line-height: normal
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file:focus {
+	outline: 0;
+	border: 1px solid #41b883
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file ::-webkit-progress-bar {
+	-webkit-appearance: none;
+	appearance: none;
+	height: .5em;
+	border-radius: .5em;
+	overflow: hidden
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-image-preview {
+	width: 3em;
+	height: 3em;
+	flex: 0 0 3em;
+	position: relative;
+	z-index: 2;
+	left: -1px;
+	box-shadow: 0 0 0 1px #efefef;
+	transition: transform .25s, box-shadow .25s, background-color .25s
+}
+@media (pointer:fine) {
+	.formulate-input[data-classification=file] .formulate-files .formulate-file-image-preview:hover {
+		transition-delay: .2s;
+		transform: scale(3);
+		background-color: #fff;
+		box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1)
+	}
+}
+.formulate-input[data-classification=file] .formulate-files .formulate-file-image-preview img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	-o-object-fit: contain;
+	object-fit: contain;
+	transition: all .25s
+}
+.formulate-input[data-classification=file] [data-type=image] .formulate-input-upload-area .formulate-input-upload-area-mask:before {
+	-webkit-mask-image: url('data:image/svg+xml;utf8,');
+	mask-image: url('data:image/svg+xml;utf8,')
+}
+.formulate-form-errors {
+	margin: .75em 0;
+	padding: 0;
+	list-style-type: none
+}
+.formulate-form-errors:first-child {
+	margin-top: 0
+}
+.formulate-form-errors:last-child {
+	margin-bottom: 0
+}
+.formulate-form-errors .formulate-form-error {
+	color: #960505;
+	font-size: .9em;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: .25em
+}
