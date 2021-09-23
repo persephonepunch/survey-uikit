@@ -54,34 +54,7 @@ color: var(--teal);
       <h1 class="headline"><strong class="titleclass">{{ texts.27809ccc }}</strong></h1>
     </div>
   </div>
-  <div class="help-header">
-    <div class="w-embed">
-      <div>
-        <div class="uk-button-group">
-          <button class="uk-button uk-button-default">Questions?</button>
-          <div class="uk-inline">
-            <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
-            <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
-              <ul class="uk-nav uk-dropdown-nav">
-                <li class="uk-active">
-                  <a href="{{ links.41e9cddf }}"><span class="uk-margin-right" uk-icon="mail"></span>Ask an Expert</a>
-                </li>
-                <li>
-                  <a href="{{ links.-794cf6d8 }}"><span class="uk-margin-right" uk-icon="question"></span>More Information</a>
-                </li>
-                <li class="uk-nav-header">Header</li>
-                <a href="{{ links.-36980a5b }}">555 555-5555</a>
-                <li class="uk-nav-divider"></li>
-                <li>
-                  <a href="{{ links.23 }}">This can be Question Specific</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {%- include "partials/help" -%}
   <div id="About-You" class="questionholder">
     <div id="About-You" class="htmlwrap w-embed w-script">
       <div id="age">
@@ -98,9 +71,9 @@ color: var(--teal);
           <formulate-input type="submit" id="about-you" label="Save Progress"></formulate-input>
         </formulate-form>
         <div v-else="">
-          <br>
-          <pre>{{ results }}</pre>
-          <br>
+          <div class="uk-card uk-card-body">
+            <h5 class="uk-card-title">{{ results }}</h5>
+          </div>
           <formulate-input type="button" label="Edit Your Answer" @click.native="reset">
         </formulate-input></div>
       </div>
@@ -155,9 +128,9 @@ new Vue({
           <formulate-input type="submit" id="pregnant" label="Save Progress"></formulate-input>
         </formulate-form>
         <div v-else="">
-          <br>
-          <pre>{{ results }}</pre>
-          <br>
+          <div class="uk-card uk-card-body">
+            <h5 class="uk-card-title">{{ results }}</h5>
+          </div>
           <formulate-input type="button" label="Edit Your Answer" @click.native="reset">
         </formulate-input></div>
       </div>
@@ -247,9 +220,9 @@ new Vue({
           <formulate-input type="submit" id="ethnicity" label="Save Progress"></formulate-input>
         </formulate-form>
         <div v-else="">
-          <br>
-          <pre>{{ results }}</pre>
-          <br>
+          <div class="uk-card uk-card-body">
+            <h5 class="uk-card-title">{{ results }}</h5>
+          </div>
           <formulate-input type="button" label="Edit Your Answer" @click.native="reset">
         </formulate-input></div>
       </div>

@@ -474,6 +474,12 @@ a {
   margin-left: auto;
 }
 
+.doublegrid {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media screen and (max-width: 991px) {
   .tabs {
     display: -webkit-box;
