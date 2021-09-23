@@ -251,6 +251,22 @@ collections:
             label: Text
             name: '-7c112e99'
             widget: string
+          - hint: 'Original text:  Your Health, key: -37831537'
+            label: Text
+            name: '-37831537'
+            widget: string
+          - hint: 'Original text: Health, key: -7f661184'
+            label: Text
+            name: '-7f661184'
+            widget: string
+          - hint: 'Original text: Life Style, key: -2c306073'
+            label: Text
+            name: '-2c306073'
+            widget: string
+          - hint: 'Original text: Lifestyle, key: 664c8c15'
+            label: Text
+            name: 664c8c15
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -263,6 +279,30 @@ collections:
             label: Link
             name: '23'
             widget: string
+          - hint: 'Original link: mailto:customerservice@company.com, key: 41e9cddf'
+            label: Link
+            name: 41e9cddf
+            widget: string
+          - hint: 'Original link: https://www.crestor.com/, key: -794cf6d8'
+            label: Link
+            name: '-794cf6d8'
+            widget: string
+          - hint: 'Original link: tel:1-917-587-9628, key: -36980a5b'
+            label: Link
+            name: '-36980a5b'
+            widget: string
+          - hint: 'Original link: /health, key: 6d79e34b'
+            label: Link
+            name: 6d79e34b
+            widget: string
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /lifestyle, key: -37a9cf1a'
+            label: Link
+            name: '-37a9cf1a'
+            widget: string
       - label: Images
         name: images
         file: cms/_data/images.json
@@ -273,6 +313,19 @@ collections:
             default: Images
           - label: Image
             name: '-2a485a80'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7d68a8e4
             widget: object
             fields:
               - name: url
